@@ -2,7 +2,7 @@
 
 A personal portfolio website built with React, showcasing my projects, skills, competitive programming profiles, and achievements.
 
-🌐 **Live:** [mehul-portfolio.vercel.app](https://mehul-portfolio.vercel.app) *(update with your actual URL)*
+🌐 **Live:** [mehul-portfolio-self.vercel.app](https://mehul-portfolio-self.vercel.app/)
 
 ---
 
