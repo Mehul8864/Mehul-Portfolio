@@ -8,7 +8,7 @@ function Home() {
 
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
-      strings: ['MERN Stack Developer', 'Competitive Programmer', 'Problem Solver', 'Open Source Enthusiast'],
+      strings: ['MERN Stack Developer', 'Competitive Programmer', 'Problem Solver'],
       typeSpeed: 60,
       backSpeed: 35,
       backDelay: 1800,
