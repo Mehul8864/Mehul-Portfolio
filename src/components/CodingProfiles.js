@@ -35,7 +35,7 @@ function CodingProfiles() {
       icon: 'fas fa-terminal',
       link: 'https://codeforces.com/profile/MehulGupta19',
       stats: [
-        { label: 'Problems Solved', value: '800+' },
+        { label: 'Problems Solved', value: '850+' },
         { label: 'Contest Rating', value: '1686' },
         { label: 'Rank', value: 'Expert' },
       ],
@@ -77,7 +77,7 @@ function CodingProfiles() {
 
         <div className="cp-summary">
           <div className="cp-summary-item">
-            <span className="cp-sum-num">1750+</span>
+            <span className="cp-sum-num">1800+</span>
             <span className="cp-sum-label">Total Problems</span>
           </div>
           <div className="cp-divider"></div>
@@ -87,8 +87,8 @@ function CodingProfiles() {
           </div>
           <div className="cp-divider"></div>
           <div className="cp-summary-item">
-            <span className="cp-sum-num">3</span>
-            <span className="cp-sum-label">Platforms</span>
+            <span className="cp-sum-num">263</span>
+            <span className="cp-sum-label">Max Streak</span>
           </div>
           <div className="cp-divider"></div>
           <div className="cp-summary-item">

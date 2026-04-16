@@ -24,8 +24,7 @@ A personal portfolio website built with React, showcasing my projects, skills, c
 - **Typed.js** — Animated typing effect
 - **Framer Motion** — Scroll animations
 - **Bootstrap 5** — Layout utilities
-- **Chart.js** — Data visualization
-- **Socket.io / Cloudinary / Razorpay** — Used in featured projects
+- **Socket.io / Cloudinary / Razorpay / Stripe** — Used in featured projects
 
 ---
 
@@ -36,7 +35,7 @@ A personal portfolio website built with React, showcasing my projects, skills, c
 npm install
 
 # Start development server
-npm start
+npm run dev
 
 # Build for production
 npm run build
@@ -50,19 +49,30 @@ App runs at `http://localhost:3000`
 
 | Project | Stack | Description |
 |---------|-------|-------------|
-| **EduFlux** | MERN, Razorpay, Cloudinary | Ed-tech platform with role-based access, course payments, and instructor dashboards |
-| **BuddyHub** | Next.js, Socket.io, MongoDB | Real-time chat app with live presence and JWT auth |
-| **ModuTech** | React, Redux, Firebase, Stripe | E-commerce app with secure payments and optimized state management |
+| **EduFlux** | MERN, Razorpay, Cloudinary | Ed-tech platform with role-based access, course payments & instructor dashboards — 35+ users |
+| **BuddyHub** | Next.js, Socket.io, MongoDB | Real-time chat app — 30% faster connections, JWT auth |
+| **ModuTech** | React, Redux, Firebase, Stripe | E-commerce app — 40% faster page loads, 50% less state complexity |
 
 ---
 
 ## Competitive Programming
 
-| Platform | Rating | Rank |
-|----------|--------|------|
-| LeetCode | 2050 | Knight (Top 5%) |
-| Codeforces | 1686 | Expert |
-| CodeChef | 1919 | 4★ |
+| Platform | Rating | Rank | Problems |
+|----------|--------|------|----------|
+| LeetCode | 2050 | Knight (Top 5%) | 950+ |
+| Codeforces | 1686 | Expert | 850+ |
+| CodeChef | 1919 | 4★ | 80+ |
+
+Max streak: **263 days** on LeetCode · **1800+** total problems solved
+
+---
+
+## Achievements
+
+- 🥇 1st Position — Enginow AI-Thon Global Coding Conquest, IIIT Lucknow
+- 🥇 1st Position — Codecode, Techfest IIT Bombay (Kanpur Zonals)
+- 🥇 1st Position — Reverse Engineering, Invictus '26 DTU
+- 🥈 2nd Position — Codelocks, Invictus '26 DTU
 
 ---
 

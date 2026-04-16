@@ -39,7 +39,7 @@ function Home() {
             </div>
             <p className="description">
               CS student at IIIT Lucknow passionate about MERN stack development, competitive programming,
-              and building impactful products. Rated 2050 on LeetCode with 900+ problems solved.
+              and building impactful products. Rated 2050 on LeetCode with 1800+ problems solved across platforms.
             </p>
           </div>
 
@@ -50,7 +50,7 @@ function Home() {
             <a href="#contact" className="btn btn-outline" onClick={(e) => { e.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>
               Contact Me <i className="fas fa-envelope ms-2"></i>
             </a>
-            <a href="mailto:mehul79067@gmail.com" className="btn btn-resume">
+            <a href="https://drive.google.com/file/d/1Aco7rqeOBd2e-kkU6O_VN49T0KCI9kJS/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-resume">
               Hire Me <i className="fas fa-briefcase ms-2"></i>
             </a>
           </div>
@@ -73,8 +73,8 @@ function Home() {
           <div className="stats-row">
             <div className="stat-badge"><span className="stat-num">950+</span><span className="stat-label">LeetCode</span></div>
             <div className="stat-badge"><span className="stat-num">2050</span><span className="stat-label">LC Rating</span></div>
-            <div className="stat-badge"><span className="stat-num">800+</span><span className="stat-label">CF Problems</span></div>
-            <div className="stat-badge"><span className="stat-num">3+</span><span className="stat-label">Projects</span></div>
+            <div className="stat-badge"><span className="stat-num">850+</span><span className="stat-label">CF Problems</span></div>
+            <div className="stat-badge"><span className="stat-num">263</span><span className="stat-label">LC Streak</span></div>
           </div>
         </div>
       </div>
