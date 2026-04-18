@@ -50,7 +50,7 @@ function Home() {
             <a href="#contact" className="btn btn-outline" onClick={(e) => { e.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>
               Contact Me <i className="fas fa-envelope ms-2"></i>
             </a>
-            <a href="https://drive.google.com/file/d/1Aco7rqeOBd2e-kkU6O_VN49T0KCI9kJS/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-resume">
+            <a href="https://drive.google.com/file/d/1O7BwTVE79TRLzavAvlTN1pa84gAQjTkG/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-resume">
               Hire Me <i className="fas fa-briefcase ms-2"></i>
             </a>
           </div>
