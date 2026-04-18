@@ -14,7 +14,7 @@ function Certificates() {
       icon: '🥈',
       color: '#C0C0C0',
       gradient: 'linear-gradient(135deg, #bdc3c7, #2c3e50)',
-      link: 'https://drive.google.com/file/d/16qcHx9k693FWQXaS8lRj8Qz91V7ZQz-H/view?usp=sharing',
+      link: 'https://drive.google.com/file/d/1zUc8fOvkWu8Rc0OkhjmfDBVEWHyZAT1P/view?usp=sharing',
       type: 'Achievement',
     },
     {
@@ -44,7 +44,17 @@ function Certificates() {
       icon: '🥇',
       color: '#f093fb',
       gradient: 'linear-gradient(135deg, #f093fb, #f5576c)',
-      link: 'https://drive.google.com/file/d/1pnFkE11A_wmYJpbhVtToH0o1CyOYMqcy/view?usp=sharing',
+      link: 'https://drive.google.com/file/d/1M6ADqz_iwVsH99vLSzRY_8EehSYR36me/view?usp=sharing',
+      type: 'Achievement',
+    },
+    {
+      title: '2nd Position – Code Venture',
+      issuer: 'Pragyan \'26, NIT Tiruchirappalli',
+      date: 'Feb 2026',
+      icon: '🥈',
+      color: '#4facfe',
+      gradient: 'linear-gradient(135deg, #4facfe, #00f2fe)',
+      link: 'https://drive.google.com/file/d/1i_3mB1EqGER0NK3c1CkVX7oQlXiGIrec/view?usp=sharing',
       type: 'Achievement',
     },
   ];
@@ -65,9 +75,9 @@ function Certificates() {
         <h2 className="section-title">Achievements & Certificates</h2>
 
         <div className="cert-stats">
-          <div className="cert-stat"><span>4</span><p>Certificates</p></div>
+          <div className="cert-stat"><span>5</span><p>Certificates</p></div>
           <div className="cert-stat"><span>3</span><p>1st Positions</p></div>
-          <div className="cert-stat"><span>2</span><p>IIT Events</p></div>
+          <div className="cert-stat"><span>3</span><p>IIT/NIT Events</p></div>
         </div>
 
         <motion.div
