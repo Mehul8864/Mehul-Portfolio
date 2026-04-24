@@ -26,7 +26,7 @@ function About() {
   const aboutPoints = [
     { icon: '🎓', text: 'CS student at IIIT Lucknow' },
     { icon: '💻', text: 'MERN Stack Developer' },
-    { icon: '🏆', text: 'LeetCode Rating: 2050 (950+ problems)' },
+    { icon: '🏆', text: 'LeetCode Rating: 2050 (1000+ problems)' },
     { icon: '⚡', text: 'Codeforces Rating: 1686' },
     { icon: '🚀', text: 'Built EduFlux, BuddyHub & ModuTech' },
     { icon: '🌟', text: 'Passionate about scalable web apps' },

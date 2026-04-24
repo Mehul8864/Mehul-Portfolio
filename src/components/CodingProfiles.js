@@ -18,7 +18,7 @@ function CodingProfiles() {
       icon: 'fas fa-code',
       link: 'https://leetcode.com/u/Mehul_Gupta_019/',
       stats: [
-        { label: 'Problems Solved', value: '950+' },
+        { label: 'Problems Solved', value: '1000+' },
         { label: 'Contest Rating', value: '2050' },
         { label: 'Global Rank', value: 'Top 5%' },
       ],
@@ -77,7 +77,7 @@ function CodingProfiles() {
 
         <div className="cp-summary">
           <div className="cp-summary-item">
-            <span className="cp-sum-num">1800+</span>
+            <span className="cp-sum-num">1850+</span>
             <span className="cp-sum-label">Total Problems</span>
           </div>
           <div className="cp-divider"></div>
@@ -87,12 +87,12 @@ function CodingProfiles() {
           </div>
           <div className="cp-divider"></div>
           <div className="cp-summary-item">
-            <span className="cp-sum-num">263</span>
+            <span className="cp-sum-num">272</span>
             <span className="cp-sum-label">Max Streak</span>
           </div>
           <div className="cp-divider"></div>
           <div className="cp-summary-item">
-            <span className="cp-sum-num">4+</span>
+            <span className="cp-sum-num">5</span>
             <span className="cp-sum-label">Achievements</span>
           </div>
         </div>
