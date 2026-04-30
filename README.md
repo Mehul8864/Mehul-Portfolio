@@ -8,13 +8,25 @@ A personal portfolio website built with React, showcasing my projects, skills, c
 
 ## Sections
 
-- **Home** — Intro with animated typing and social links
-- **About** — Bio, education timeline, and quick stats
+- **Home** — Animated hero with typed roles, availability badge, animated counters, and social links
+- **About** — Bio, education timeline, and fun facts
 - **Skills** — Tech stack categorized by languages, frameworks, databases & tools, and coursework
-- **Projects** — MERN Stack projects with tech tags and GitHub links
-- **Coding Profiles** — LeetCode, Codeforces, CodeChef stats with rating bars
+- **Projects** — Full stack projects with tech tags, key features, and GitHub links
+- **Coding Profiles** — LeetCode, Codeforces, CodeChef stats with animated rating bars
 - **Achievements** — Competition wins and certificates
-- **Contact** — Contact form and social links
+- **Contact** — Contact form (EmailJS) and social links
+
+---
+
+## Features
+
+- 🌙 **Dark / Light theme toggle** — Full site theme switch via navbar button
+- 📊 **Reading progress bar** — Gradient bar fills as you scroll
+- 🔢 **Animated counters** — Stats count up on scroll into view
+- 🟢 **Availability badge** — Pulsing indicator on hero section
+- 🎉 **Fun facts** — Personality cards in the About section
+- 📱 **Fully responsive** — Mobile-first design across all sections
+- ✉️ **EmailJS contact form** — Send messages directly from the site
 
 ---
 
@@ -22,9 +34,10 @@ A personal portfolio website built with React, showcasing my projects, skills, c
 
 - **React 19** — UI framework
 - **Typed.js** — Animated typing effect
-- **Framer Motion** — Scroll animations
+- **Framer Motion** — Scroll-triggered animations
 - **Bootstrap 5** — Layout utilities
-- **Socket.io / Cloudinary / Razorpay / Stripe** — Used in featured projects
+- **EmailJS** — Contact form email delivery
+- **react-intersection-observer** — Scroll-based animation triggers
 
 ---
 
@@ -49,30 +62,31 @@ App runs at `http://localhost:3000`
 
 | Project | Stack | Description |
 |---------|-------|-------------|
-| **EduFlux** | MERN, Razorpay, Cloudinary | Ed-tech platform with role-based access, course payments & instructor dashboards — 35+ users |
-| **BuddyHub** | Next.js, Socket.io, MongoDB | Real-time chat app — 30% faster connections, JWT auth |
-| **ModuTech** | React, Redux, Firebase, Stripe | E-commerce app — 40% faster page loads, 50% less state complexity |
+| **EduFlux** | React, Node, MongoDB, Razorpay, Cloudinary | Ed-tech platform with role-based access, course payments & instructor dashboards — 35+ users |
+| **BuddyHub** | Next.js, Socket.io, MongoDB, JWT | Real-time chat app — 30% faster connections, live presence indicators |
+| **ModuTech** | React, Redux, Firebase, Stripe, MongoDB | E-commerce app — 40% faster page loads, 50% less state complexity |
 
 ---
 
 ## Competitive Programming
 
-| Platform | Rating | Rank | Problems |
-|----------|--------|------|----------|
-| LeetCode | 2050 | Knight (Top 5%) | 950+ |
+| Platform | Rating | Rank | Problems Solved |
+|----------|--------|------|-----------------|
+| LeetCode | 2050 | Knight (Top 5%) | 1000+ |
 | Codeforces | 1686 | Expert | 850+ |
 | CodeChef | 1919 | 4★ | 80+ |
 
-Max streak: **263 days** on LeetCode · **1800+** total problems solved
+Max streak: **272 days** on LeetCode · **1850+** total problems solved
 
 ---
 
 ## Achievements
 
-- 🥇 1st Position — Enginow AI-Thon Global Coding Conquest, IIIT Lucknow
-- 🥇 1st Position — Codecode, Techfest IIT Bombay (Kanpur Zonals)
+- 🥇 1st Position — Enginow AI-Thon Global Coding Conquest, IIIT Lucknow (2025)
+- 🥇 1st Position — Codecode, Techfest IIT Bombay (Kanpur Zonals) (Nov 2025)
 - 🥇 1st Position — Reverse Engineering, Invictus '26 DTU
 - 🥈 2nd Position — Codelocks, Invictus '26 DTU
+- 🥈 2nd Position — Code Venture, Pragyan '26 NIT Tiruchirappalli (Feb 2026)
 
 ---
 
@@ -82,3 +96,4 @@ Max streak: **263 days** on LeetCode · **1800+** total problems solved
 - **LinkedIn:** [mehul-gupta-b38a2b330](https://www.linkedin.com/in/mehul-gupta-b38a2b330/)
 - **GitHub:** [Mehul8864](https://github.com/Mehul8864)
 - **LeetCode:** [Mehul_Gupta_019](https://leetcode.com/u/Mehul_Gupta_019/)
+- **Codeforces:** [MehulGupta19](https://codeforces.com/profile/MehulGupta19)

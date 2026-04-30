@@ -152,3 +152,23 @@
   .section-title { font-size: 2.2rem; }
   .scroll-indicator { display: none; }
 }
+
+/* Light theme */
+.light-theme #skills {
+  background: linear-gradient(160deg, #faf5ff 0%, #f8fafc 50%, #faf5ff 100%);
+  color: #1a1a2e;
+}
+.light-theme .skill-card {
+  background: rgba(255,255,255,0.85);
+  border-color: rgba(0,0,0,0.06);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.light-theme .skill-card:hover {
+  background: rgba(255,255,255,0.98);
+  border-color: rgba(13,148,136,0.25);
+  box-shadow: 0 16px 40px rgba(13,148,136,0.1);
+}
+.light-theme .skill-name { color: rgba(26,26,46,0.75); }
+.light-theme .skill-filter-btn { color: rgba(26,26,46,0.55); background: rgba(255,255,255,0.7); border-color: rgba(13,148,136,0.2); }
+.light-theme .skill-filter-btn:hover { color: #0d9488; border-color: #0d9488; }
+.light-theme .skill-filter-btn.active { background: linear-gradient(135deg, #0d9488, #0891b2); color: #fff; }

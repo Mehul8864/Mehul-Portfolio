@@ -1,20 +1,51 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
+
+// ── EmailJS config ──────────────────────────────────────────────
+// 1. Go to https://www.emailjs.com and sign up (free)
+// 2. Add an Email Service (Gmail) → copy the Service ID
+// 3. Create an Email Template with variables: {{from_name}}, {{from_email}}, {{subject}}, {{message}}
+//    Set "To Email" in the template to mehul79067@gmail.com
+// 4. Copy your Public Key from Account → API Keys
+// Replace the three values below:
+const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   // e.g. 'service_abc123'
+const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // e.g. 'template_xyz456'
+const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // e.g. 'abcDEFghiJKL'
+// ────────────────────────────────────────────────────────────────
 
 function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState('idle'); // idle | sending | success | error
 
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
-    window.location.href = `mailto:mehul79067@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(body)}`;
-    setSent(true);
-    setTimeout(() => setSent(false), 3000);
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setStatus('sending');
+
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name:  formData.name,
+          from_email: formData.email,
+          subject:    formData.subject,
+          message:    formData.message,
+          to_email:   'mehul79067@gmail.com',
+        },
+        EMAILJS_PUBLIC_KEY
+      );
+      setStatus('success');
+      setFormData({ name: '', email: '', subject: '', message: '' });
+      setTimeout(() => setStatus('idle'), 4000);
+    } catch (err) {
+      console.error('EmailJS error:', err);
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 4000);
+    }
   };
 
   const contactInfo = [
@@ -107,11 +138,15 @@ function Contact() {
                 </div>
                 <motion.button
                   type="submit"
-                  className={`send-btn ${sent ? 'sent' : ''}`}
+                  className={`send-btn ${status}`}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
+                  disabled={status === 'sending'}
                 >
-                  {sent ? '✅ Message Sent!' : <><i className="fas fa-paper-plane"></i> Send Message</>}
+                  {status === 'sending' && <><i className="fas fa-spinner fa-spin"></i> Sending...</>}
+                  {status === 'success' && <>✅ Message Sent!</>}
+                  {status === 'error'   && <>❌ Failed. Try again</>}
+                  {status === 'idle'    && <><i className="fas fa-paper-plane"></i> Send Message</>}
                 </motion.button>
               </form>
             </motion.div>

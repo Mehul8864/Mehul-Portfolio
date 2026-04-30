@@ -1,14 +1,42 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
+import { useInView } from 'react-intersection-observer';
 import '../styles/Home.css';
 import mehulPhoto from '../assets/mehul.jpeg';
 
+// Animated counter hook
+function useCounter(target, duration = 2000, inView) {
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    if (!inView) return;
+    let start = 0;
+    const step = target / (duration / 16);
+    const timer = setInterval(() => {
+      start += step;
+      if (start >= target) {
+        setCount(target);
+        clearInterval(timer);
+      } else {
+        setCount(Math.floor(start));
+      }
+    }, 16);
+    return () => clearInterval(timer);
+  }, [inView, target, duration]);
+  return count;
+}
+
 function Home() {
   const typedRef = useRef(null);
+  const [statsRef, statsInView] = useInView({ triggerOnce: true, threshold: 0.3 });
+
+  const lc = useCounter(1000, 1800, statsInView);
+  const lcRating = useCounter(2050, 2000, statsInView);
+  const cf = useCounter(850, 1800, statsInView);
+  const streak = useCounter(272, 2000, statsInView);
 
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
-      strings: ['MERN Stack Developer', 'Competitive Programmer', 'Problem Solver'],
+      strings: ['Full Stack Developer', 'Competitive Programmer', 'Problem Solver', 'Open Source Contributor'],
       typeSpeed: 60,
       backSpeed: 35,
       backDelay: 1800,
@@ -25,6 +53,12 @@ function Home() {
 
       <div className="section-container">
         <div className="home-content">
+          {/* Availability badge */}
+          <div className="availability-badge">
+            <span className="avail-dot"></span>
+            Available for Internships &amp; Collaborations
+          </div>
+
           <div className="profile-wrapper">
             <div className="profile-ring"></div>
             <div className="profile-ring ring2"></div>
@@ -38,7 +72,7 @@ function Home() {
               <span ref={typedRef} className="typed-text"></span>
             </div>
             <p className="description">
-              CS student at IIIT Lucknow passionate about MERN stack development, competitive programming,
+              CS student at IIIT Lucknow passionate about full stack development, competitive programming,
               and building impactful products. Rated 2050 on LeetCode with 1850+ problems solved across platforms.
             </p>
           </div>
@@ -51,7 +85,7 @@ function Home() {
               Contact Me <i className="fas fa-envelope ms-2"></i>
             </a>
             <a href="https://drive.google.com/file/d/13OPcncELWyktia8y8rY1WU0WMyvYSrKp/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-resume">
-              Hire Me <i className="fas fa-briefcase ms-2"></i>
+              Resume <i className="fas fa-file-alt ms-2"></i>
             </a>
           </div>
 
@@ -68,13 +102,28 @@ function Home() {
             <a href="https://leetcode.com/u/Mehul_Gupta_019/" target="_blank" rel="noopener noreferrer" className="social-link" title="LeetCode">
               <i className="fas fa-code"></i>
             </a>
+            <a href="https://codeforces.com/profile/MehulGupta19" target="_blank" rel="noopener noreferrer" className="social-link" title="Codeforces">
+              <i className="fas fa-terminal"></i>
+            </a>
           </div>
 
-          <div className="stats-row">
-            <div className="stat-badge"><span className="stat-num">1000+</span><span className="stat-label">LeetCode</span></div>
-            <div className="stat-badge"><span className="stat-num">2050</span><span className="stat-label">LC Rating</span></div>
-            <div className="stat-badge"><span className="stat-num">850+</span><span className="stat-label">CF Problems</span></div>
-            <div className="stat-badge"><span className="stat-num">272</span><span className="stat-label">LC Streak</span></div>
+          <div className="stats-row" ref={statsRef}>
+            <div className="stat-badge">
+              <span className="stat-num">{lc}+</span>
+              <span className="stat-label">LeetCode</span>
+            </div>
+            <div className="stat-badge">
+              <span className="stat-num">{lcRating}</span>
+              <span className="stat-label">LC Rating</span>
+            </div>
+            <div className="stat-badge">
+              <span className="stat-num">{cf}+</span>
+              <span className="stat-label">CF Problems</span>
+            </div>
+            <div className="stat-badge">
+              <span className="stat-num">{streak}</span>
+              <span className="stat-label">LC Streak</span>
+            </div>
           </div>
         </div>
       </div>

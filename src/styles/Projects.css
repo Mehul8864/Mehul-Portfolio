@@ -258,3 +258,30 @@
   .section-title { font-size: 2.2rem; }
   .scroll-indicator { display: none; }
 }
+
+/* Light theme */
+.light-theme #projects {
+  background: linear-gradient(160deg, #f8fafc 0%, #f0fdf9 50%, #f8fafc 100%);
+  color: #1a1a2e;
+}
+.light-theme .project-card {
+  background: rgba(255,255,255,0.85);
+  border-color: rgba(0,0,0,0.06);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+.light-theme .project-card:hover {
+  background: rgba(255,255,255,0.98);
+  border-color: rgba(0,0,0,0.1);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.12);
+}
+.light-theme .project-header h3 { color: #1a1a2e; }
+.light-theme .project-description { color: rgba(26,26,46,0.65); }
+.light-theme .key-features li { color: rgba(26,26,46,0.65); }
+.light-theme .tech-tag { background: rgba(0,0,0,0.04); border-color: rgba(0,0,0,0.08); color: rgba(26,26,46,0.6); }
+.light-theme .tech-tag:hover { background: rgba(13,148,136,0.08); color: #0d9488; border-color: rgba(13,148,136,0.25); }
+.light-theme .filter-btn { color: rgba(26,26,46,0.55); background: rgba(255,255,255,0.7); border-color: rgba(13,148,136,0.2); }
+.light-theme .filter-btn:hover { color: #0d9488; border-color: #0d9488; }
+.light-theme .filter-btn.active { background: linear-gradient(135deg, #0d9488, #0891b2); color: #fff; }
+.light-theme .icon-link { background: rgba(0,0,0,0.04); border-color: rgba(0,0,0,0.08); color: rgba(26,26,46,0.55); }
+.light-theme .icon-link:hover { background: rgba(13,148,136,0.1); color: #0d9488; border-color: rgba(13,148,136,0.3); }
+.light-theme .duration { color: rgba(26,26,46,0.4); background: rgba(0,0,0,0.04); border-color: rgba(0,0,0,0.06); }

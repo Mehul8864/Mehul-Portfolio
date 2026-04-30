@@ -25,11 +25,12 @@ function About() {
 
   const aboutPoints = [
     { icon: '🎓', text: 'CS student at IIIT Lucknow' },
-    { icon: '💻', text: 'MERN Stack Developer' },
+    { icon: '💻', text: 'Full Stack Developer' },
     { icon: '🏆', text: 'LeetCode Rating: 2050 (1000+ problems)' },
     { icon: '⚡', text: 'Codeforces Rating: 1686' },
     { icon: '🚀', text: 'Built EduFlux, BuddyHub & ModuTech' },
     { icon: '🌟', text: 'Passionate about scalable web apps' },
+    { icon: '🔧', text: 'Exploring DevOps & Cloud Architecture' },
   ];
 
   return (
@@ -44,13 +45,13 @@ function About() {
                 <div className="bio-avatar">MG</div>
                 <div>
                   <h3>Mehul Gupta</h3>
-                  <p>MERN Stack Developer · IIIT Lucknow</p>
+                  <p>Full Stack Developer · IIIT Lucknow</p>
                 </div>
               </div>
               <p className="bio-text">
-                I am a Computer Science student at IIIT Lucknow with a strong passion for MERN stack development,
+                I am a Computer Science student at IIIT Lucknow with a strong passion for full stack development,
                 problem-solving, and building impactful products. I have worked on projects like EduFlux, BuddyHub,
-                and ModuTech, gaining hands-on experience with the MERN stack, real-time communication, authentication,
+                and ModuTech, gaining hands-on experience with the full stack, real-time communication, authentication,
                 and scalable web app development.
               </p>
               <p className="bio-text">
@@ -66,6 +67,8 @@ function About() {
                 ))}
               </div>
             </div>
+
+
           </div>
 
           <div className="education-side">
@@ -85,6 +88,24 @@ function About() {
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* Fun facts */}
+            <div className="fun-facts">
+              <h3 className="sub-title" style={{ marginTop: '2rem' }}>Fun Facts</h3>
+              <div className="facts-grid">
+                {[
+                  { emoji: '☕', fact: 'Fueled by coffee & algorithms' },
+                  { emoji: '🌙', fact: 'Best code written after midnight' },
+                  { emoji: '🎯', fact: '272-day LeetCode streak' },
+                  { emoji: '🏅', fact: '3× IIT/NIT event winner' },
+                ].map((f, i) => (
+                  <div className="fact-card" key={i}>
+                    <span className="fact-emoji">{f.emoji}</span>
+                    <span className="fact-text">{f.fact}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 // src/App.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
@@ -12,9 +12,19 @@ import ScrollToTop from './components/ScrollToTop';
 import './styles/App.css';
 
 function App() {
+  const [theme, setTheme] = useState('dark');
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'dark' ? 'light' : 'dark');
+  };
+
+  useEffect(() => {
+    document.body.className = theme === 'light' ? 'light-theme' : '';
+  }, [theme]);
+
   return (
-    <div className="App">
-      <Navbar />
+    <div className={`App ${theme === 'light' ? 'light-theme' : ''}`}>
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
       <Home />
       <About />
       <Skills />

@@ -116,7 +116,10 @@
   transition: all 0.3s ease;
 }
 .send-btn:hover { box-shadow: 0 10px 30px rgba(100,255,218,0.3); }
-.send-btn.sent { background: linear-gradient(135deg, #4ade80, #22c55e); color: #fff; }
+.send-btn.success { background: linear-gradient(135deg, #4ade80, #22c55e); color: #fff; }
+.send-btn.error { background: linear-gradient(135deg, #f87171, #ef4444); color: #fff; }
+.send-btn.sending { opacity: 0.75; cursor: not-allowed; }
+.send-btn:disabled { cursor: not-allowed; }
 
 /* Footer */
 .footer {
@@ -139,3 +142,46 @@
 @media (max-width: 480px) {
   .footer { flex-direction: column; text-align: center; }
 }
+
+/* Light theme */
+.light-theme #contact {
+  background: linear-gradient(135deg, #faf5ff 0%, #f8fafc 100%);
+  color: #1a1a2e;
+}
+.light-theme .contact-info {
+  background: rgba(255,255,255,0.85);
+  border-color: rgba(13,148,136,0.15);
+}
+.light-theme .contact-info-title { color: #0d9488; }
+.light-theme .contact-info-desc { color: rgba(26,26,46,0.65); }
+.light-theme .info-item { background: rgba(0,0,0,0.03); }
+.light-theme .info-item:hover { background: rgba(13,148,136,0.06); }
+.light-theme .info-label { color: rgba(26,26,46,0.4); }
+.light-theme .info-text a, .light-theme .info-text span { color: rgba(26,26,46,0.8); }
+.light-theme .info-text a:hover { color: #0d9488; }
+.light-theme .social-section h4 { color: rgba(26,26,46,0.5); }
+.light-theme .social-icon-btn { background: rgba(0,0,0,0.04); border-color: rgba(0,0,0,0.08); color: rgba(26,26,46,0.6); }
+.light-theme .contact-form-wrap {
+  background: rgba(255,255,255,0.85);
+  border-color: rgba(13,148,136,0.15);
+}
+.light-theme .form-group label { color: rgba(26,26,46,0.5); }
+.light-theme .form-group input, .light-theme .form-group textarea {
+  background: rgba(0,0,0,0.03);
+  border-color: rgba(0,0,0,0.1);
+  color: #1a1a2e;
+}
+.light-theme .form-group input:focus, .light-theme .form-group textarea:focus {
+  border-color: #0d9488;
+  background: rgba(13,148,136,0.04);
+  box-shadow: 0 0 0 3px rgba(13,148,136,0.1);
+}
+.light-theme .form-group input::placeholder, .light-theme .form-group textarea::placeholder { color: rgba(26,26,46,0.3); }
+.light-theme .send-btn { background: linear-gradient(135deg, #0d9488, #0891b2); color: #fff; }
+.light-theme .footer {
+  background: rgba(248,250,252,0.98);
+  border-top-color: rgba(0,0,0,0.06);
+}
+.light-theme .footer p { color: rgba(26,26,46,0.4); }
+.light-theme .footer-links a { color: rgba(26,26,46,0.4); }
+.light-theme .footer-links a:hover { color: #0d9488; }

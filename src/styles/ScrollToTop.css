@@ -25,3 +25,9 @@
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+.light-theme .scroll-to-top {
+  background: linear-gradient(135deg, #0d9488, #7c3aed);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(13,148,136,0.4);
+}

@@ -60,7 +60,9 @@ function Projects() {
 
   const filters = [
     { key: 'all', label: 'All Projects' },
-    { key: 'fullstack', label: 'MERN Stack' },
+    { key: 'fullstack', label: 'Full Stack' },
+    { key: 'frontend', label: 'Frontend' },
+    { key: 'backend', label: 'Backend' },
   ];
 
   const filtered = activeFilter === 'all' ? projects : projects.filter(p => p.category === activeFilter);

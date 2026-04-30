@@ -43,7 +43,58 @@
   align-items: start;
 }
 
-/* Bio Card */
+/* GitHub Stats */
+.github-stats-card {
+  margin-top: 1.5rem;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(100,255,218,0.08);
+  border-radius: 20px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+.github-stats-title {
+  font-size: 0.9rem;
+  color: #64ffda;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.github-stats-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+.github-stats-img:last-child { margin-bottom: 0; }
+
+/* Fun Facts */
+.facts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+.fact-card {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 14px;
+  padding: 0.8rem 1rem;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+.fact-card:hover {
+  background: rgba(100,255,218,0.05);
+  border-color: rgba(100,255,218,0.15);
+  transform: translateY(-3px);
+}
+.fact-emoji { font-size: 1.3rem; flex-shrink: 0; }
+.fact-text { font-size: 0.82rem; color: rgba(255,255,255,0.65); line-height: 1.4; }
 .bio-card {
   background: rgba(255,255,255,0.025);
   border: 1px solid rgba(100,255,218,0.08);
@@ -190,4 +241,36 @@
   .about-grid { grid-template-columns: 1fr; }
   .section-title { font-size: 2.2rem; }
   .scroll-indicator { display: none; }
+  .facts-grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* Light theme */
+.light-theme #about {
+  background: linear-gradient(160deg, #f8fafc 0%, #f0fdf9 50%, #f8fafc 100%);
+  color: #1a1a2e;
+}
+.light-theme .bio-card {
+  background: rgba(255,255,255,0.85);
+  border-color: rgba(13,148,136,0.12);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+.light-theme .bio-card:hover { border-color: rgba(13,148,136,0.25); }
+.light-theme .bio-header h3 { color: #1a1a2e; }
+.light-theme .bio-header p { color: #0d9488; }
+.light-theme .bio-text { color: rgba(26,26,46,0.65); }
+.light-theme .about-point { background: rgba(255,255,255,0.7); border-color: rgba(0,0,0,0.06); color: rgba(26,26,46,0.75); }
+.light-theme .about-point:hover { background: rgba(13,148,136,0.06); border-color: rgba(13,148,136,0.2); color: #1a1a2e; }
+.light-theme .edu-card { background: rgba(255,255,255,0.8); border-color: rgba(0,0,0,0.06); }
+.light-theme .edu-card:hover { background: rgba(255,255,255,0.95); }
+.light-theme .edu-content h4 { color: #1a1a2e; }
+.light-theme .edu-loc { color: rgba(26,26,46,0.45); }
+.light-theme .edu-meta span { color: rgba(26,26,46,0.55); background: rgba(0,0,0,0.04); border-color: rgba(0,0,0,0.06); }
+
+.light-theme .github-stats-card {
+  background: rgba(255,255,255,0.85);
+  border-color: rgba(13,148,136,0.12);
+}
+.light-theme .github-stats-title { color: #0d9488; }
+.light-theme .fact-card { background: rgba(255,255,255,0.7); border-color: rgba(0,0,0,0.06); }
+.light-theme .fact-card:hover { background: rgba(13,148,136,0.06); border-color: rgba(13,148,136,0.15); }
+.light-theme .fact-text { color: rgba(26,26,46,0.65); }
