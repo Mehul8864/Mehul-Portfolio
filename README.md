@@ -76,7 +76,7 @@ App runs at `http://localhost:3000`
 | Codeforces | 1686 | Expert | 850+ |
 | CodeChef | 1919 | 4★ | 80+ |
 
-Max streak: **272 days** on LeetCode · **1850+** total problems solved
+Max streak: **282 days** on LeetCode · **1850+** total problems solved
 
 ---
 

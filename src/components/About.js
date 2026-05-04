@@ -97,7 +97,7 @@ function About() {
                 {[
                   { emoji: '☕', fact: 'Fueled by coffee & algorithms' },
                   { emoji: '🌙', fact: 'Best code written after midnight' },
-                  { emoji: '🎯', fact: '272-day LeetCode streak' },
+                  { emoji: '🎯', fact: '282-day LeetCode streak' },
                   { emoji: '🏅', fact: '3× IIT/NIT event winner' },
                 ].map((f, i) => (
                   <div className="fact-card" key={i}>

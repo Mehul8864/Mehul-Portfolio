@@ -32,7 +32,7 @@ function Home() {
   const lc = useCounter(1000, 1800, statsInView);
   const lcRating = useCounter(2050, 2000, statsInView);
   const cf = useCounter(850, 1800, statsInView);
-  const streak = useCounter(272, 2000, statsInView);
+  const streak = useCounter(282, 2000, statsInView);
 
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
